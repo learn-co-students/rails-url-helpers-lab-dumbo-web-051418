@@ -19,8 +19,8 @@ class StudentsController < ApplicationController
     end
 
     @student.save
-    #redirect_to student_path(@student.id)
-    render :show
+    redirect_to student_path(@student.id)
+    
   end
 
   private
